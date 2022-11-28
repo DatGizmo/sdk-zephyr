@@ -213,6 +213,7 @@ def main():
         sys.exit('Github token not set in environment, please set the '
                  'GITHUB_TOKEN environment variable and retry.')
 
+    raise Exception("Testing")
     gh = Github(token)
     maintainer_file = Maintainers(args.maintainer_file)
 
